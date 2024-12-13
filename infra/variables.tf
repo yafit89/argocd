@@ -24,6 +24,7 @@ variable "ec2_map" {
   default = {
         "GitHub_Runner" = {}
         "K8S_Cluster" = {}
+          extra_ports = [30080]
     }
 }
 
