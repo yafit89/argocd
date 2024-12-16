@@ -1,11 +1,13 @@
 # gh_arc
 sudo yum update -y
+
 sudo yum install -y libicu
 
 
 ## Argocd
 
 kubectl create namespace argocd
+
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 
 kubectl get pods -n argocd
